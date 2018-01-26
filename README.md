@@ -16,11 +16,10 @@ To run this project you will have to install following components in your enviro
 ```
 $ git clone https://github.com/rehan4me/ToDo-Angular4-SpringBoot.git
 ```
-#### Go to project directory and install following dependacies.
+#### Go to project directory.
 ```
 $ cd ToDo-Angular4-SpringBoot
 ```
-
 ## Step to run the project
 #### 1. Build and run the backend app using maven
 ```
