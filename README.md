@@ -21,7 +21,7 @@ $ git clone https://github.com/rehan4me/ToDo-Angular4-SpringBoot.git
 $ cd ToDo-Angular4-SpringBoot
 ```
 ## Step to run the project
-#### 1. Build and run the backend app using maven
+#### 1. Build and run the _Spring-Boot_ back-end app using maven
 ```
 $ cd back-end
 ```
@@ -36,7 +36,7 @@ $ mvn spring-boot:run
 ```
 The backend server will start at http://localhost:8080. I have integrated **_Swagger-UI_** with spring boot application so we can see  and test all API end points using this link http://localhost:8080/swagger-ui.html
 
-### 2. Install dependencies and run Angular 4 front-end app
+### 2. Install dependencies and run _Angular 4_ front-end app
 ```
 $ cd front-end
 $ npm install
