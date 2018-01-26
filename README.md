@@ -41,7 +41,7 @@ Alternatively, you can run the app without packaging it using this command
 ```
 $ mvn spring-boot:run
 ```
-The backend server will start at http://localhost:8080. I have integrated **_Swagger-UI_** with spring boot application so we can see & test all API end points using this link http://localhost:8080/swagger-ui.html
+The backend server will start at http://localhost:8080. I have integrated **_Swagger-UI_** with spring boot application so we can see  and test all API end points using this link http://localhost:8080/swagger-ui.html
 
 
 #### 2. Run frontend app 
