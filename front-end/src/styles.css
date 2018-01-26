@@ -1,0 +1,209 @@
+/* You can add global styles to this file, and also import other style files */
+*{
+  box-sizing: border-box;
+}
+html, body {
+  font-family: "Segoe UI WestEuropean","Segoe UI",-apple-system,BlinkMacSystemFont,Roboto,"Helvetica Neue",sans-serif;
+  -webkit-font-smoothing: antialiased;
+  margin: 0px;
+  font-size: 13px;
+  color: #4d4d4d;
+}
+
+.fadeIn {
+  -webkit-animation: fadeIn 1s; /* Safari 4.0 - 8.0 */
+  animation: fadeIn 1s;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes fadeIn {
+    0%   {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+/* Standard syntax */
+@keyframes fadeIn {
+    0%   {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.app {
+  width: 60%;
+  margin: auto;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
+}
+
+.app-header{
+  width: 100%;
+  display: flex;
+  display: -ms-flex;
+  flex-flow: row nowrap;
+  justify-content:center;
+  align-items: center;
+  background-color: #007cc0 !important;
+  color: #ffffff !important;
+  padding: 1.2rem;
+}
+
+.app-header > .app-title {
+  text-align: center;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.app-content {
+  flex: 1 0 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.app-footer {
+  padding: 0.8rem;
+  color: gray;
+  text-align: right;
+  background-color: whitesmoke;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 -0.5rem 1rem rgba(gray, 0.1);
+}
+
+.ui-grid {
+  width: 100%;
+}
+
+.ui-grid-row > .grid-text {
+  width:80%;
+}
+
+.text-strike{
+  text-decoration: line-through;
+  color: grey;
+}
+
+.ui-grid-row, .ui-grid-header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.7rem;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.003);
+  box-shadow: inset 0 -2px 1px rgba(0,0,0,0.03);
+  font-size: 1.4rem;
+}
+.ui-grid-header {
+      border-bottom: 1px solid #e6e6e6;
+}
+
+.add-todo {
+    padding: 1rem 1rem 1rem 3rem;
+    width: 75%;
+    border: none;
+    font-size: 1.4rem; 
+    color: inherit;
+    font-family: inherit; 
+}
+
+.add-todo::placeholder {
+  font-family: inherit;
+  font-style: italic;
+  color: #ccc9c9;
+}
+
+.add-todo:focus {
+  outline: none;
+}
+
+.delete-button, .add-button{
+  background-color: white;
+  border: none;
+  color: #e07f87;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 900;
+  font-size: 1.4rem
+}
+.add-button{
+  padding: .8rem;
+  font-weight: 600;
+  color: #007cc0;
+}
+.add-button:hover {
+  background: #e8f5fc;
+}
+.delete-button:hover {
+  color: #d13443;
+}
+
+.add-button:before    { content: "\271A"; }
+.delete-button:before { content: "\2716";}
+
+/* The container */
+.container {
+    display: block;
+    position: relative;
+    margin-bottom: 2rem;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+    background-color: #007cc0;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+

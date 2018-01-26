@@ -1,0 +1,22 @@
+<header class="app-header">
+    <span class="app-title">Todo List</span>
+</header>
+<main class="app-content">
+    <div class="ui-grid">
+        <div class="ui-grid-header">
+            <input class="add-todo" placeholder="What needs to be done?" autofocus="" [(ngModel)]="newTodo.title" (keyup.enter)="addTodo()">
+            <button class="add-button" (click)="addTodo()">&nbsp;Add Todo</button>
+        </div>
+        <div class="ui-grid-row" *ngFor="let todo of todos">
+            <label class="container">
+                <input type="checkbox" (click)="updateToDo(todo,$event)" [checked]="todo.status==='completed'">
+                <span class="checkmark"></span>
+            </label>
+            <label [className]="(todo.status==='completed')?'grid-text text-strike':'grid-text'">{{todo.title}}</label>
+            <button class="delete-button" (click)="deleteTodo(todo)"></button>
+        </div>
+    </div>
+</main>
+<footer class="app-footer" *ngIf="todos.length>0">
+    <span>{{pendingItems()}} Items pending</span>
+</footer>
