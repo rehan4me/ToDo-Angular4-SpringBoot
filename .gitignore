@@ -28,6 +28,7 @@
 # misc
 */npm-debug.log
 */typings
+*.mp4
 
 # e2e
 */e2e/*.js
