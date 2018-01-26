@@ -36,7 +36,7 @@ $ mvn spring-boot:run
 ```
 The backend server will start at http://localhost:8080. I have integrated **_Swagger-UI_** with spring boot application so we can see  and test all API end points using this link http://localhost:8080/swagger-ui.html
 
-### 2. Install dependencies and run _Angular 4_ front-end app
+#### 2. Install dependencies and run _Angular 4_ front-end app
 ```
 $ cd front-end
 $ npm install
