@@ -13,26 +13,20 @@ To run this project you will have to install following components in your enviro
 - Maven: http://maven.apache.org/
 
 #### Clone the project in your system.
-
 ```
 $ git clone https://github.com/rehan4me/ToDo-Angular4-SpringBoot.git
 ```
-
 #### Go to project directory and install following dependacies.
-
 ```
 $ cd ToDo-Angular4-SpringBoot
 ```
 
-### Installing Angular 4 project dependencies
-
-```
-$ npm install
-```
-
 ## Step to run the project
 #### 1. Build and run the backend app using maven
-
+```
+$ cd back-end
+```
+Run this command to build and run the app.
 ```
 $ mvn package 
 $ java -jar target/todo-1.0.0.jar
@@ -43,11 +37,13 @@ $ mvn spring-boot:run
 ```
 The backend server will start at http://localhost:8080. I have integrated **_Swagger-UI_** with spring boot application so we can see  and test all API end points using this link http://localhost:8080/swagger-ui.html
 
-
-#### 2. Run frontend app 
-
+### 2. Install dependencies and run Angular 4 front-end app
 ```
-$ ng serve
+$ cd front-end
+$ npm install
 ```
-
+Run this command to open the app.
+```
+$ ng serve --open
+```
 Thats it now you can play here http://localhost:4200.
