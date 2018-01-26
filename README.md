@@ -1,27 +1,52 @@
-# FrontEnd
+# ToDo-angular4-springBoot
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5.
+Simple demo ToDo app developed using Angular 4, Spring-Boot and MongoDB.
 
-## Development server
+## Getting Started
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Requirements
+To run this project you will have to install following components in your environment.
 
-## Code scaffolding
+- Node.js: https://nodejs.org/en/
+- MongoDB: https://www.mongodb.com/
+- Maven: http://maven.apache.org/
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+#### Clone the project in your system.
 
-## Build
+```
+$ git clone https://github.com/rehan4me/ToDo-Angular4-SpringBoot.git
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+#### Go to project directory and install following dependacies.
 
-## Running unit tests
+```
+$ cd ng4-spring-boot-mongodb-demo
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Installing Angular 4 project dependencies
 
-## Running end-to-end tests
+```
+$ npm install
+```
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+## Step to run the project
+#### 1. Build and run the backend app using maven
 
-## Further help
+```
+$ mvn package 
+$ java -jar target/ems-1.0.0.jar
+```
+Alternatively, you can run the app without packaging it using this command
+```
+$ mvn spring-boot:run
+```
+The backend server will start at http://localhost:8080. After starting backend server you can run front end app.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+#### 2. Run frontend app using npm 
+
+```
+$ ng serve
+```
+
+Thats it now you can play it here http://localhost:4200.
