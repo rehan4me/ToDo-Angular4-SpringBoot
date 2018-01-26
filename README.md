@@ -1,4 +1,4 @@
-# ToDo-angular4-springBoot
+# ToDo-Angular4-SpringBoot
 
 Simple demo ToDo app developed using Angular 4, Spring-Boot and MongoDB.
 
@@ -21,7 +21,7 @@ $ git clone https://github.com/rehan4me/ToDo-Angular4-SpringBoot.git
 #### Go to project directory and install following dependacies.
 
 ```
-$ cd ng4-spring-boot-mongodb-demo
+$ cd ToDo-Angular4-SpringBoot
 ```
 
 ### Installing Angular 4 project dependencies
@@ -41,7 +41,8 @@ Alternatively, you can run the app without packaging it using this command
 ```
 $ mvn spring-boot:run
 ```
-The backend server will start at http://localhost:8080. After starting backend server you can run front end app.
+The backend server will start at http://localhost:8080. I have integrated Swagger-UI with spring boot application so we can see & test all API end points here http://localhost:8080/swagger-ui.html
+
 
 #### 2. Run frontend app 
 
