@@ -35,7 +35,7 @@ $ npm install
 
 ```
 $ mvn package 
-$ java -jar target/ems-1.0.0.jar
+$ java -jar target/todo-1.0.0.jar
 ```
 Alternatively, you can run the app without packaging it using this command
 ```
@@ -43,10 +43,10 @@ $ mvn spring-boot:run
 ```
 The backend server will start at http://localhost:8080. After starting backend server you can run front end app.
 
-#### 2. Run frontend app using npm 
+#### 2. Run frontend app 
 
 ```
 $ ng serve
 ```
 
-Thats it now you can play it here http://localhost:4200.
+Thats it now you can play here http://localhost:4200.
